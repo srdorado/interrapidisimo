@@ -1,0 +1,22 @@
+{
+    "name": "irapidisimo/module-helloworld",
+    "description": "Hello World",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Daniel Eduardo Dorado P.",
+            "email": "doradodaniel14@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "IRapidisimo\\HelloWorld\\": ""
+        }
+    }
+}

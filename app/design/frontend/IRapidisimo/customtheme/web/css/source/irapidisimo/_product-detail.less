@@ -1,0 +1,70 @@
+//
+//  All devices
+//  _____________________________________________
+
+& when (@media-common = true)  {
+
+    #html-body.catalog-product-view {
+        #maincontent {
+            .column.main {
+                > div {
+                    &.product-info-main {
+                        .page-title-wrapper.product {
+                            .page-title .base {
+                                color: @red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+
+
+}
+
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    #html-body.catalog-product-view {
+        #maincontent {
+            .column.main {
+                > div {
+                    &.product-info-main {
+                        .page-title-wrapper.product {
+                            .page-title .base {
+                                color: @red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//
+//  Mobile XS
+//  _____________________________________________
+
+@media (max-width: @mobile-xs) {
+
+
+
+}

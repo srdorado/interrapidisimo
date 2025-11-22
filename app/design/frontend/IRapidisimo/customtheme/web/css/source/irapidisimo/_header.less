@@ -1,0 +1,55 @@
+//
+//  All devices
+//  _____________________________________________
+
+& when (@media-common = true)  {
+
+    #html-body {
+        header.page-header {
+            .header.content {
+                background: @black;
+            }
+        }
+    }
+}
+
+
+
+//
+//  Desktop
+//  _____________________________________________
+
+@media (min-width: @tablet) {
+    #html-body {
+        header.page-header {
+            .header.content {
+                background: @black;
+            }
+        }
+    }
+}
+
+//
+//  Tablet
+//  _____________________________________________
+
+@media (max-width: @tablet) {
+    #html-body {
+        header.page-header {
+            .header.content {
+                background: @black;
+            }
+        }
+    }
+}
+
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+
+
+}

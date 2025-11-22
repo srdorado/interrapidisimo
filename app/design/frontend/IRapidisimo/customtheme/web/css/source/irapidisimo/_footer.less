@@ -1,0 +1,66 @@
+//
+//  All devices
+//  _____________________________________________
+
+& when (@media-common = true)  {
+
+    #html-body {
+        footer.page-footer {
+            .footer.content {
+                background: @black;
+            }
+        }
+    }
+
+}
+
+
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    body#html-body {
+        footer.page-footer {
+            .footer.content {
+                background: @black;
+            }
+        }
+    }
+
+}
+
+//
+//  Tablet
+//  _____________________________________________
+
+@media (max-width: @tablet) {
+
+    #html-body {
+        footer.page-footer {
+            .footer.content {
+                background: @black;
+            }
+        }
+    }
+
+}
+
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    body#html-body {
+        footer.page-footer {
+            .footer.content {
+                background: @black;
+            }
+        }
+    }
+
+}
